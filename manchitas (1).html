@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manchitas - Productos para Mascotas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fredoka', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #fff8e1, #fff3cd);
+      color: #333;
+    }
+    header {
+      background-color: #ff6f61;
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    nav {
+      background-color: #ffcc00;
+      padding: 1em;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 20px;
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a::before {
+      content: '🔍 ';
+    }
+    nav a:hover {
+      color: #ff6f61;
+    }
+    .section {
+      padding: 3em 2em;
+      text-align: center;
+    }
+    h2 {
+      color: #ff6f61;
+      margin-bottom: 1em;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2em;
+      padding-top: 1em;
+    }
+    .product {
+      border: none;
+      border-radius: 16px;
+      padding: 1.5em 1em;
+      background-color: #ffffff;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1em;
+    }
+    .product h3 {
+      margin: 0.5em 0 0.2em;
+      font-size: 1.2em;
+      color: #444;
+    }
+    .product p {
+      color: #777;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: background 0.3s ease;
+    }
+    .whatsapp-btn:hover {
+      background-color: #20bf5d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐾 Bienvenidos a Manchitas 🐾</h1>
+    <p>Todo para consentir a tu mascota con estilo</p>
+  </header>
+
+  <nav>
+    <a href="https://www.google.com/search?q=juguete+para+perro" target="_blank">Juguetes</a>
+    <a href="https://www.google.com/search?q=ropa+para+mascotas" target="_blank">Ropa</a>
+    <a href="https://www.google.com/search?q=camas+para+perros" target="_blank">Camas</a>
+  </nav>
+
+  <section id="inicio" class="section">
+    <h2>¡Dale a tu mascota lo mejor!</h2>
+    <p>En Manchitas encontrarás ropa divertida, camas cómodas y juguetes irresistibles para tus peludos amigos.</p>
+  </section>
+
+  <section id="productos" class="section">
+    <h2>Productos</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1601758123927-196a76a6c1c0?auto=format&fit=crop&w=600&q=80" alt="Juguete para perro">
+        <h3>Juguete mordedera</h3>
+        <p>$99 MXN</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1603052875768-310e9f06646a?auto=format&fit=crop&w=600&q=80" alt="Ropa para mascota">
+        <h3>Sudadera para mascota</h3>
+        <p>$199 MXN</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1606011983953-2608d13692de?auto=format&fit=crop&w=600&q=80" alt="Cama para perro">
+        <h3>Cama acolchonada</h3>
+        <p>$499 MXN</p>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/5215512345678" class="whatsapp-btn" target="_blank">💬</a>
+
+</body>
+</html>
